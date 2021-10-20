@@ -1,11 +1,11 @@
 $(function(){
-  
+
  $(".result").hide();
-  
+
  //ボタンがクリックされた時
  $("button").click(function(){
-   var qNum = $("ul li").length;
-   
+   var qNum = $(".main-question ul li").length;
+
    if( $("ul li input:checked").length < qNum ){
      alert("未回答の問題があります");
    } else {
@@ -16,7 +16,7 @@ $(function(){
      var typeENum = $(".typeE:checked").length;
      var typeFNum = $(".typeF:checked").length;
      var typeWNum = $(".typeW:checked").length;
-     
+
      if( typeANum >= typeBNum && typeANum >= typeCNum && typeANum >= typeDNum && typeANum >= typeENum && typeANum >= typeFNum && typeWNum == 1) {
        $(".resultA").fadeIn();
      } else if( typeANum >= typeBNum && typeANum >= typeCNum && typeANum >= typeDNum && typeANum >= typeENum && typeANum >= typeFNum && typeWNum != 1) {
@@ -66,8 +66,8 @@ $(function(){
      } else if( typeFNum >= typeANum && typeFNum >= typeBNum && typeFNum >= typeCNum && typeFNum >= typeDNum && typeFNum >= typeENum) {
        $(".resultF").fadeIn();
      }
-     
+
    }
  });
-  
+
 });
