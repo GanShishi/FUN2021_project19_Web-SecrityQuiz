@@ -5,6 +5,8 @@ $(function(){
  //ボタンがクリックされた時
  $("button").click(function(){
    var qNum = $(".main-question ul li").length;
+  
+   $(".result").hide();
 
    if( $("ul li input:checked").length < qNum ){
      alert("未回答の問題があります");
