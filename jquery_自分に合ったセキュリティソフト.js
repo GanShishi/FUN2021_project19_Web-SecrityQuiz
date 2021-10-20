@@ -1,12 +1,14 @@
 $(function(){
 
  $(".result").hide();
+ $(".buttons_parent").hide();
 
  //ボタンがクリックされた時
  $("button").click(function(){
    var qNum = $(".main-question ul li").length;
-  
+
    $(".result").hide();
+   $(".buttons_parent").hide();
 
    if( $("ul li input:checked").length < qNum ){
      alert("未回答の問題があります");
@@ -68,6 +70,8 @@ $(function(){
      } else if( typeFNum >= typeANum && typeFNum >= typeBNum && typeFNum >= typeCNum && typeFNum >= typeDNum && typeFNum >= typeENum) {
        $(".resultF").fadeIn();
      }
+
+     $(".buttons_parent").fadeIn();
 
    }
  });
