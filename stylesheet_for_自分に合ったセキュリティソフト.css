@@ -16,54 +16,40 @@ li {
   list-style: none;
 }
 
-
 header {
-  top:0px;
+  top: 0px;
   background-color: #20b2aa;
   display: flex;
   position: fixed;
-  justify-content: space-between;
   width: 100%;
-  /*要素が重なるときに使うもの*/
-  /*z-index: 99;*/
+  align-items: center;
 }
 
 .header-logo {
   font-size: 30px;
   font-weight: bold;
-  float: left;
-  /* 余白の大きさを指定（上、右、下、左）） */
-  padding: 20px 40px 20px 40px;
+  display: inline-block;
+  /*padding: 10px 20px;*/
+  padding: 20px 40px 20px 20px;
 }
-/*
-.header-list a {
-  float: right;
-  padding: 15px;
-  color: #000000;
-  text-decoration: none;
-}
-*/
 
 .header-nav {
-  text-align: center;
+  margin-left: auto;
 }
 
 .header-nav-menu {
-  margin: 0 auto;
-  padding: 5%;
-  display: inline-block;
+  display: flex;
 }
 
 .header-nav-menu-item {
-  text-align: center;
-  display: inline-block;
-  width: 47%; /* ここで項目の幅を指定 */
   font-weight: bold;
 }
 
 .header-nav-menu-item a {
     text-decoration: none;
     color: #333;
+    padding: 0;
+    margin: 10px;
 }
 
 .header-nav-menu-item a:hover{
@@ -185,8 +171,6 @@ img {
 .buttons:hover {
   box-shadow: 0px 4px 8px #575;
 }
-
-
 
 .footer {
   /*green*/
